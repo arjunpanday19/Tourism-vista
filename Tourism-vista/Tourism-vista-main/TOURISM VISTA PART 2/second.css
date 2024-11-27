@@ -1,0 +1,286 @@
+body {
+    font-family:  serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00bfff ;
+}
+
+.header {
+    
+    color:rgb(238, 238, 153);
+
+    padding: 10px;
+    
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00bfff;
+    color: rgb(238, 238, 153);
+    padding:20px;
+}
+
+.button {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 28px;
+    border: none;
+    
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:last-child {
+    margin-left: auto;
+}
+
+.button:hover {
+    background-color: #26aeee;
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    margin:  auto;
+    background-color: #00bfff;
+    
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    background-color: #00bfff;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00bfff;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    padding-left: 40px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: rgb(238, 238, 153);
+    padding-left: 40px;
+}
+
+/* Style the signup form */
+.signup-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:257px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    width: 91%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select{
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;  
+}
+button[type="submit"] {
+    background-color: #00bfff;
+    color:rgb(238, 238, 153);
+    padding: 12px 34px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Style for tables */
+table {
+    border-collapse: collapse;
+    width: 30%;
+    margin: 20px;
+    float: left;
+    padding: 20px;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background-color: white;
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+/* Style for circles */
+.circle {
+    text-align: left;
+    color:white;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    top: -60px;
+    z-index: 1;
+    margin: 0 auto;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+
+/* Style for table cells */
+
+.abc {
+    width: 350px;
+    margin: center;
+}
+
+td {
+    margin-bottom: 10px;
+    position: relative;
+    padding: 7px;
+    color: #9d9393;
+}
+
+
+
+td::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1px;
+    background-color:#9d9393 ;
+
+
+}
+.table-container{
+    
+    display: flex;
+            justify-content: space-between;
+            margin: 0 46px;
+            background-color: #e7e3e3;
+            padding: 20px;
+        }
+
+
+button[type="button"]{
+    color:white;
+    background-color: #0056b3;
+    border-radius: 10px;
+    height:28px;
+    padding-left: 16px;
+
+}
+button[type="btn"]{    background-color: #2d2bdb;
+    width: 100%;
+    color:white;
+    border-radius: 10PX;
+    border:none;
+    height:30px
+}
+.submit{
+    background-color: #00bfff;
+    border-color:rgb(238, 238, 153);
+    color:rgb(238, 238, 153);
+    right: 200px;
+    
+}
+h2{
+    color: #3498db;
+    font-size: 31px;
+    margin: 0px;
+}
+h5{
+    color: #3498db;
+    
+}
+.form{
+    color:#000;
+    font-size: 30px;
+}
+button[type="btns"] {  background-color: #3498db;
+    width: 100%;
+    color:white;
+    
+    border:none;
+    height:30px;
+     
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .right {
+        order: 1; /* Move the right column to the top on small screens */
+        
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 500px;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    }
+    .table-container {
+        display:flex;
+        flex-basis: calc(50% - 20px); 
+        flex-direction: column;
+        width:349px;  /*50% width with some spacing on small screens */
+    }
+    
+    .header{
+        width: 100%;
+        padding: 0%;
+    }
+    table{
+        width: 300px;
+    }
+    .buttons-container{
+        padding:0%;
+        width:100%
+    }
+    .button{
+        padding: 12px 11px;
+    }
+}
